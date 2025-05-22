@@ -1,3 +1,4 @@
+
 /* General reset and body styling */
 body {
     font-family: 'Poppins', sans-serif;
@@ -82,7 +83,7 @@ body {
     color: #ccc;
 }
 
-.container {
+.container1 {
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
@@ -117,4 +118,67 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     object-fit: contain;
+}
+
+.WeOffer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.WeOffer h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    /* Highlight section title */
+}
+
+.FastDeliveries {
+    max-width: 260px;
+    margin: 20px 0 20px 40px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    /* Slightly lighter than the body */
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+
+
+    float: left;
+
+}
+
+.FastDeliveries img {
+    width: 75%;
+    /* Makes the image take up the full width of its container */
+    height: auto;
+    /* Maintains the image's aspect ratio */
+    border-radius: 10px;
+    /* Optional: Adds rounded corners to the image */
+    object-fit: cover;
+    /* Ensures the image fills the container without distortion */
+}
+
+.CleanerAlternative {
+    max-width: 260px;
+    margin: 20px 0 20px 20px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    /* Slightly lighter than the body */
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+
+    float: left;
+}
+
+.CleanerAlternative img {
+    width: 75%;
+    /* Makes the image take up the full width of its container */
+    height: auto;
+    /* Maintains the image's aspect ratio */
+    border-radius: 10px;
+    /* Optional: Adds rounded corners to the image */
+    object-fit: cover;
+    /* Ensures the image fills the container without distortion */
 }
