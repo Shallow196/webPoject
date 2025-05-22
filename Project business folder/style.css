@@ -1,0 +1,120 @@
+/* General reset and body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    /* Dark theme background */
+    color: #ffffff;
+    /* Light text for contrast */
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1e1e1e;
+    /* Darker background for the navbar */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+    /* Highlight color */
+}
+
+.main-header {
+    text-align: center;
+    background-color: #2a2a2a;
+    /* Slightly lighter than the body */
+    padding: 40px 20px;
+    border-bottom: 1px solid #444;
+
+    /* Background image settings */
+    background-image: url('/images/pexels-jeshoots-234527.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Optional: dark overlay for better text contrast */
+    position: relative;
+    color: white;
+}
+
+.main-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* semi-transparent overlay */
+    z-index: 0;
+}
+
+.main-header>* {
+    position: relative;
+    /* So text stays above the overlay */
+    z-index: 1;
+}
+
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ffcc00;
+    /* Highlight header text */
+}
+
+.main-header p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    /* Dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.intro-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    /* space between text and image */
+}
+
+.intro-content p {
+    flex: 3;
+    /* text takes more space */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.intro-image {
+    flex: 1;
+    /* image takes less space */
+    max-width: 150px;
+    /* smaller image */
+    height: auto;
+    /* keep aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+}
